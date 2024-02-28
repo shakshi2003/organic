@@ -24,8 +24,8 @@ const ProductCard = (props) => {
                     {starIcons}
                 </div>
                 <p className={styles.cardPrice}>
-                    {props.data.discount > 0 && <small className={styles.cardOldPrice}>{props.data.price.toFixed(2)}$</small>}
-                    {priceFixed}$
+                    {props.data.discount > 0 && <small className={styles.cardOldPrice}>{props.data.price.toFixed(2)}₹</small>}
+                    {priceFixed}₹
                 </p>
             </div>
             {props.data.discount > 0 && <Sale />}
