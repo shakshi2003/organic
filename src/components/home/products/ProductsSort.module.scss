@@ -1,0 +1,30 @@
+@import '../../../scss/base/Colors.module.scss';
+@import '../../../scss/components/Global.module.scss';
+
+.productsMainWrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0;
+    gap: 30px;
+}
+
+.leafImg {
+    height: 100%;
+}
+
+.productsWrap {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px 0;
+
+    @media (min-width: 540px) and (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media(max-width: 540px) {
+        grid-template-columns: 1fr;
+    }
+}

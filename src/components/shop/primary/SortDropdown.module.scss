@@ -1,0 +1,18 @@
+@import '../../../scss/base/Colors.module.scss';
+
+.customSelect {
+    border: 1px solid $silver;
+    padding: 10px;
+    background-color: transparent;
+    font-size: 1rem;
+    width: 100%;
+  
+    &:hover, &:focus, &:active {
+        outline: none; 
+    }
+  }
+  
+  .customOption {
+    border: 1px solid red; 
+    padding: 5px;
+  }

@@ -1,0 +1,15 @@
+@import '../../../scss/base/Colors.module.scss';
+@import '../../../scss/components/Card.module.scss';
+
+.customerCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    border-radius: 4px;
+    text-align: center;
+    background: $white;
+    box-shadow: 0 0 10px 0 rgba(40,40,40,0.1);
+}

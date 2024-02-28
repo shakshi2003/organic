@@ -1,0 +1,12 @@
+@import './scss/base/Colors.module.scss';
+@import './scss/base/Reset.module.scss';
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+::selection {
+    color: $white;
+    background-color: $darkGreen;
+}

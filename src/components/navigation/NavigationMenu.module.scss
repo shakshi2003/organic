@@ -1,0 +1,28 @@
+@import '../../scss/base/Colors.module.scss';
+
+.nav {
+    display: flex;
+    padding: 15px 20px;
+}
+
+.logo {
+    width: 150px;
+    height: 70px;
+}
+
+.loginButton {
+    height: 40px;
+    margin-top: 18px;
+    margin-left: 20px;
+    border: 2px solid $darkGreen;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: $darkGreen;
+    color: $white;
+    transition: 300ms;
+    font-weight: bold;
+    &:hover {
+        background-color: transparent;
+        color: $darkGreen;
+    }
+}

@@ -1,0 +1,40 @@
+@import '../../scss/base/Colors.module.scss';
+@import '../../scss/components/Global.module.scss';
+
+.shopSection {
+    background-color: $light;
+}
+
+.shopWrap {
+    display: flex;
+    padding: 50px 0;
+    @media (max-width: 1000px) {
+        flex-direction: column-reverse;
+        gap: 100px;
+    }
+}
+
+.shopPrimaryWrap {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    @media (max-width: 1000px) {
+        padding-left: 0;
+    }
+}
+
+.shopSecondaryWrap {
+    border-right: 1px solid $silver;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 25%;
+    @media (max-width: 1000px) {
+        width: 100%;
+        padding-right: 0;
+        border-right: none;
+    }
+}

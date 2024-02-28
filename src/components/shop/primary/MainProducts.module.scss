@@ -1,0 +1,42 @@
+@import '../../../scss/base/Colors.module.scss';
+
+.sortWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 576px) {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}
+
+.mainProductsWrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.mainProductsWrapError {
+    display: grid;
+}
+
+.errorHolder {
+    grid-column: 1 / -1; 
+}
+
+.titleErrorText {
+    font-size: 2rem;
+    padding-bottom: 20px;
+    color: $darkGreen;
+}
+
+.bodyErrorText {
+    font-size: 1.5rem;
+    border-top: 2px solid $darkGreen;
+    padding-top: 10px;
+    color: $darkGreen;
+}
